@@ -1,12 +1,14 @@
-import json
+import time
 
 def lambda_handler(event, context):
-     print("Lambda function started.")
-       # Wait for 20 seconds
-    time.sleep(40)
+    print("Lambda function started.")
+    
+    # Wait for 20 seconds
+    time.sleep(4)
     
     print("Lambda function completed.")
+    
     return {
         'statusCode': 200,
-        'body': json.dumps('Lamda function executed successfully')
+        'body': 'Lambda function executed successfully!'
     }
