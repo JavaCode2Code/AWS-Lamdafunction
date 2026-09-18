@@ -29,3 +29,5 @@ arn:aws:lambda:ap-south-1:aws-user_id:function:scjpApiGet:alias-name
 
 in api gatway we have to give arn with alias name 
 after changing version it will change lamda code
+
+Weighted alias ---transfer load between version
