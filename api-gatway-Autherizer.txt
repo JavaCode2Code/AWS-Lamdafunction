@@ -24,7 +24,7 @@ export const handler = async(event) => {
                         [
                             {
                                 "Action": "execute-api:Invoke", 
-                                "Resource": ["arn:aws:execute-api:ap-south-1:048264494467:5ksgxo31uk/dev/GET/testEndPoint"], 
+                                "Resource": ["arn:aws:execute-api:ap-south-1:aws-accout_id:5ksgxo31uk/dev/GET/testEndPoint"], 
                                 "Effect": `${permission}`
                             }
                         ]
