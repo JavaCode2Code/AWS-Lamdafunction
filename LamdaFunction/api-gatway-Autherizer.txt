@@ -1,0 +1,35 @@
+
+nodejs22version code
+creating api gatway 
+and configure authorzoer to give token
+
+export const handler = async(event) => {
+    console.log('event', event)
+
+    const token = event['authorizationToken']
+
+    console.log('token', token)
+    
+    
+    let permission = "Deny";
+    if(token === "secure-token") {
+    	permission = "Allow"
+    }
+    const authResponse = { 
+        "principalId": "my-test-principalId", 
+        "policyDocument": 
+            { 
+                "Version": "2012-10-17", 
+                "Statement": 
+                        [
+                            {
+                                "Action": "execute-api:Invoke", 
+                                "Resource": ["arn:aws:execute-api:ap-south-1:048264494467:5ksgxo31uk/dev/GET/testEndPoint"], 
+                                "Effect": `${permission}`
+                            }
+                        ]
+            }
+        
+    }
+    return authResponse;
+};

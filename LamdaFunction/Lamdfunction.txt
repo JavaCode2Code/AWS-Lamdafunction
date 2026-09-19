@@ -1,0 +1,40 @@
+Lambda function::
+
+
+1: Lambda Function - Include Free Tier
+
+
+101 requests x 2,000 ms x 0.001 ms to sec conversion factor = 202.00 total compute (seconds)
+0.125 GB x 202.00 seconds = 25.25 total compute (GB-s)
+25.25 GB-s - 400000 free tier GB-s = -399,974.75 GB-s
+Max (-399974.75 GB-s, 0 ) = 0.00 total billable GB-s
+Tiered price for: 0.00 GB-s
+Total tier cost = 0.00 USD (monthly compute charges)
+Monthly compute charges: 0.00 USD
+101 requests - 1000000 free tier requests = -999,899 monthly billable requests
+Max (-999899 monthly billable requests, 0 ) = 0.00 total monthly billable requests
+Monthly request charges: 0 USD
+0.50 GB - 0.5 GB (no additional charge) = 0.00 GB billable ephemeral storage per function
+Monthly ephemeral storage charges: 0 USD
+Lambda costs - With Free Tier (monthly): 0.00 USD
+
+
+
+2: Lambda Function - Without Free Tier
+
+
+102 requests x 2,000 ms x 0.001 ms to sec conversion factor = 204.00 total compute (seconds)
+0.125 GB x 204.00 seconds = 25.50 total compute (GB-s)
+Tiered price for: 25.50 GB-s
+25.50 GB-s x 0.0000166667 USD = 0.00 USD
+Total tier cost = 0.0004 USD (monthly compute charges)
+Monthly compute charges: 0.00 USD
+102 requests x 0.0000002 USD = 0.00 USD (monthly request charges)
+Monthly request charges: 0.00 USD
+0.50 GB - 0.5 GB (no additional charge) = 0.00 GB billable ephemeral storage per function
+Monthly ephemeral storage charges: 0 USD
+Lambda cost (monthly): 0.00 USD
+
+
+
+

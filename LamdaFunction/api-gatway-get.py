@@ -1,0 +1,23 @@
+export const handler = async (event) => {
+  // TODO implement
+  const response = {
+    statusCode: 200,
+    body: JSON.stringify('Hello from Get Lambda!'),
+  };
+  return response;
+};
+
+
+arn in api gatway
+
+arn:aws:lambda:ap-south-1:aws-user_id:function:scjpApiGet
+
+
+export const handler = async (event) => {
+  // TODO implement
+  const response = {
+    statusCode: 200,
+    body: JSON.stringify('Hello from Get Lambda! v1'),
+  };
+  return response;
+};
